@@ -6,7 +6,7 @@ const app =express();
 
 app.use(express.json());
 
-
+//secure from brutforce attack
 const loginLimiter =rateLimit({
     windowMs: 1 * 60 * 1000, // 1 minutes
     limit: 5,
